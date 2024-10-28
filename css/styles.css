@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    min-height: 100vh;
+    position: relative;
+    background-color: #003d54;
+    color: #FDFFF5;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+hr {
+    width: 100%;
+    color: #54C7C6;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+nav a { /* links within "nav" container */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;  /* removes underline*/
+    color: white;         /* by default, links are blue */
+}
+
+nav a:hover {   /* pseudo class */
+    background-color: #0281B1;
+    transition: .5s;    /* transition effect */
+}
+
+.current-page {
+    color: #54C7C6;
+    font-weight: 700;
+}
+
+footer {
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: start;
+    color: #BDFCC1;
+    font-weight: 400;
+}
+
+#footer-content { /* displays image and text side-by-side */
+    display: flex;
+    justify-content: center;
+}
+
+.padded {
+    padding: 10px;
+}
+
+#csumb-logo {
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+  font-size: 3em;
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
