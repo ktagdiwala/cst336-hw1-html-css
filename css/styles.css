@@ -8,7 +8,6 @@ body {
     color: #FDFFF5;
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
@@ -107,9 +106,13 @@ a {
     color: #0593c6;
 }
 
+a:active {
+    color: #BAFDDA;
+}
+
 .text_and_img {
     display: flex;
-    width: 1000;
+    width: 70%;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -120,11 +123,15 @@ a {
 .text {
     display: flex;
     flex-direction: column;
-    width: 1000;
+    width: 70%;
     height: auto;
     justify-content: center;
     align-self: center;
     padding: 10px;
+}
+
+.only_img {
+    align-self: center;
 }
 
 details {
@@ -155,4 +162,37 @@ p {
     font-size: 1.3em;
     padding: 0px 20px;
     margin: 10px 0px;
+}
+
+.list {
+    width: 70%;
+    align-self: center;
+}
+
+li > ul {
+    font-size: 1.3em;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 350;
+}
+
+ol.numbered { 
+    list-style: none; /* Remove default numbering */ 
+    counter-reset: list-counter; /* Reset the custom counter */ 
+} 
+
+ol.numbered > li { 
+    counter-increment: list-counter; /* Increment the counter */ 
+    position: relative; /* Enable absolute positioning of the counter */ 
+    padding-left: 1.5em; /* Add space for the counter  */
+    padding-bottom: 20px;
+}
+
+ol.numbered > li::before {
+    content: counter(list-counter) ". "; /* Add custom numbering */ 
+    position: absolute; /* Position it absolutely */ 
+    left: 0; /* Align it to the left */ 
+    font-size: 2em;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 350;
+    color: #BAFDDA;
 }
