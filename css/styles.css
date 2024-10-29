@@ -175,6 +175,8 @@ li > ul {
     font-weight: 350;
 }
 
+
+/* Used to style only the numbers in the ordered list */
 ol.numbered { 
     list-style: none; /* Remove default numbering */ 
     counter-reset: list-counter; /* Reset the custom counter */ 
@@ -195,4 +197,18 @@ ol.numbered > li::before {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 350;
     color: #BAFDDA;
+}
+
+table, tr {
+    width: 70%;
+    align-self: center;
+}
+
+td {
+    text-align: center;
+}
+
+.hover_color:hover {
+    background-color: #0281B1;
+    transition: 0.7s;
 }
